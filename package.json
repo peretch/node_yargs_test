@@ -1,0 +1,17 @@
+{
+  "name": "03_bases_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^15.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
