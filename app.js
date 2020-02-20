@@ -1,7 +1,7 @@
-const { createFile, listTable } = require('./multiply/multiply');
-
-// Specify yargs
 const { argv } = require('./config/yargs');
+const colors = require('colors');
+
+const { createFile, listTable } = require('./multiply/multiply');
 
 const command = argv._[0];
 
@@ -13,7 +13,7 @@ switch(command){
     
     case 'create':
         createFile(argv.base, argv.limit)
-            .then( file => console.log(`File creted ${file}`))
+            .then( file => console.log(`File creted ${file}`.green))
             .catch( e => console.log(e));
     break;
 

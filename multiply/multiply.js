@@ -1,4 +1,5 @@
 const fs = require('fs');
+const colors = require('colors');
 
 const createFile = (base, limit) => {
 
@@ -22,7 +23,7 @@ const createFile = (base, limit) => {
 }
 
 const listTable = (base, limit) => {
-    console.log(`---MULTIPLICATION TABLE IN BASE ${base} TO ${limit}---`);
+    console.log(`MULTIPLICATION TABLE IN BASE ${base} TO ${limit}`.blue);
     for(let i = 1; i <= limit; i++){
         console.log(`${base} x ${i} = ${base * i}`);
     }
